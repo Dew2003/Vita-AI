@@ -23,8 +23,8 @@ except ImportError:
 # ==========================================
 
 # --- AZURE / OPENAI CREDENTIALS ---
-AZURE_ENDPOINT = "https://healthcareassistant.openai.azure.com/"
-AZURE_KEY = "9nZfZjY7lNvIibkaqQmFAVPJGzisfZI1DurHsiOxNbUaxp9bj5faJQQJ99BIACYeBjFXJ3w3AAABACOGl1vk"
+AZURE_ENDPOINT = "x"
+AZURE_KEY = "x"
 AZURE_MODEL = "gpt-4o"
 AZURE_API_VERSION = "2024-02-01"
 
@@ -681,4 +681,5 @@ if __name__ == "__main__":
     if "messages" not in st.session_state: st.session_state.messages = []
 
     if st.session_state.logged_in: show_dashboard(st.session_state.data_db)
+
     else: show_login_page(st.session_state.auth_db)
